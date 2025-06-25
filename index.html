@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Alerta de Servicio</title>
+</head>
+<body>
+
+  <form id="servicioForm">
+    <label><u>Tipo de servicio</u></label>
+    <select class="tipo" name="servicio" required>
+      <option value="Incendio vivienda">Incendio vivienda</option>
+      <option value="Accidente vehicular">Accidente vehicular</option>
+      <option value="Rescate de persona">Rescate de persona</option>
+      <option value="Rescate en agua">Rescate en agua</option>
+      <option value="Hazmat">Hazmat</option>
+      <option value="Rescate con cuerdas">Rescate con cuerdas</option>
+      <option value="Incendio Forestal">Incendio Forestal</option>
+      <option value="Rescate animal">Rescate animal</option>
+    </select>
+
+    <label><u>Dirección del servicio</u></label>
+    <input placeholder="Dirección" class="direccion" name="direccion" required />
+
+    <label><u>Móviles</u></label>
+    <select name="movil" required>
+      <option value="19-26">19-26</option>
+      <option value="25-26">25-26</option>
+      <option value="19">19</option>
+      <option value="26">26</option>
+      <option value="21">21</option>
+      <option value="25">25</option>
+      <option value="21-15">21-15</option>
+      <option value="28">28</option>
+      <option value="18">18</option>
+      <option value="24">24</option>
+    </select>
+
+    <input type="submit" value="Enviar" />
+  </form>
+
+  <div id="resultado" class="listado" style="display: none;"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

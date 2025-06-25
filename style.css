@@ -1,0 +1,147 @@
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+}
+
+form {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+    width: 80%;
+    max-width: 1000px;
+}
+
+label {
+    font-size: 2em;
+    display: block;
+    margin: 20px 0 10px;
+    text-decoration: underline;
+    color: rgb(0, 0, 0);
+}
+
+.direccion{
+    width: fit-content;
+    padding: 15px;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #444;
+    color: #fff;
+}
+
+select, input[type="text"], input[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+select {
+    background-color: #333;
+    color: #fff;
+}
+
+input[type="text"] {
+    background-color: #444;
+    color: #fff;
+}
+
+input[type="submit"] {
+    background-color: #f00;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #c00;
+}
+
+option {
+    background-color: #333;
+    color: #fff;
+}
+
+.listado {
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* margin: 0; */
+    flex-direction: column;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+h1 {
+    font-size: 4em;
+    color: #f00;
+    margin: 20px 0;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 3em;
+    color: #fff;
+    margin: 20px 0;
+}
+
+div {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+    width: 80%;
+    max-width: 1000px;
+    margin-bottom: 20px;
+}
+
+@keyframes anim{
+    50% {background-color: #333;} 
+    50% {background-color: rgb(0, 0, 0);}
+}
+
+.serv{
+    animation-name: anim;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 3em;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 768px) {
+    form {
+        width: 100%;
+    }
+
+    label {
+        font-size: 1.5em;
+    }
+
+    select, input[type="text"], input[type="submit"] {
+        font-size: 1.2em;
+    }
+}
