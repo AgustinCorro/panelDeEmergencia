@@ -144,3 +144,31 @@ div {
         font-size: 1.2em;
     }
 }
+
+@media screen and (min-width: 1920px) and (min-height: 1080px) and (orientation: landscape) {
+  .listado {
+    font-size: 3em;
+    line-height: 1.5;
+    padding: 40px;
+  }
+
+  .listado h1 {
+    font-size: 6em;
+    color: #ff0000;
+  }
+
+  .listado h2 {
+    font-size: 4em;
+  }
+
+  .listado > div {
+    margin-bottom: 40px;
+    padding: 30px;
+    max-width: 90%;
+  }
+
+  body {
+    background-color: black;
+  }
+}
+
