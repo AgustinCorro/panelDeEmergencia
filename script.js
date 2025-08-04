@@ -1,3 +1,6 @@
+//cargo la alerta en la constante sonido(lo podes cambiar por otro mas amigable)
+const sonido = new Audio('/alerta.mp3');
+
 document.getElementById('servicioForm').addEventListener('submit', function (e) {
   e.preventDefault();
 
@@ -28,4 +31,6 @@ document.getElementById('servicioForm').addEventListener('submit', function (e) 
   resultadoDiv.style.justifyContent = 'center';
   resultadoDiv.style.alignItems = 'center';
   resultadoDiv.style.height = '100vh';
+  //reproduzco la alerta
+  sonido.play();
 });
